@@ -41,6 +41,12 @@ MCP-коннектор и команды:
 /plugin install medlib-skill@medlib
 ```
 
+Или одной командой в любом агенте (Claude Code, Codex, Cursor и другие):
+
+```bash
+npx skills add joenaine/medlibkz
+```
+
 При первом запросе Claude откроет браузер для входа в MEDLIB. После этого доступны команды:
 
 | Команда | Источник |
