@@ -41,4 +41,4 @@ If the user names a source (or runs a `/medlib:<source>` command), use only that
 - Answer in the user's language.
 - Start with the main clinical action in one or two sentences, then short sections.
 - Copy concrete doses, routes, frequencies, durations and monitoring targets from the retrieved text. Do not invent what was not retrieved; say what is missing.
-- Name the topic, protocol, PMID or record each fact came from.
+- Name the topic, protocol, PMID or record each fact came from, and link it with the `medlibUrl` (or the "MEDLIB link" line) from the tool result. These pages open inside MEDLIB; never link to uptodate.com, dynamed.com, bestpractice.bmj.com or clinicalkey.com.

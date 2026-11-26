@@ -48,10 +48,15 @@ https://medlib.kz/api/mcp/medlib
 
 ## ChatGPT
 
-1. **Settings → Apps & Connectors → Advanced → Developer mode** (включить).
+**MEDLIB GPT.** Откройте MEDLIB GPT в ChatGPT, нажмите «Sign in with medlib.kz» и задайте вопрос. Работает на любом тарифе ChatGPT, где доступны GPTs.
+
+**Коннектор (Developer mode).**
+
+1. **Settings → Apps & Connectors → Advanced settings → Developer mode** (включить).
 2. **Create** → Name: `MEDLIB`, MCP Server URL: `https://medlib.kz/api/mcp/medlib`, Authentication: **OAuth**.
-3. Войдите в аккаунт MEDLIB.
-4. В новом чате выберите MEDLIB в меню **+** и задайте вопрос, например: «Найди в протоколах РК лечение артериальной гипертензии».
+3. Войдите в аккаунт MEDLIB и выберите MEDLIB в меню **+** нового чата.
+
+Инструкции и схема для создания GPT: [chatgpt/](chatgpt/).
 
 ## Cursor и другие MCP-клиенты
 
@@ -70,6 +75,7 @@ https://medlib.kz/api/mcp/medlib
 - `.mcp.json` — подключение к MCP-серверу MEDLIB.
 - `commands/` — слэш-команды `/medlib:*` для Claude Code.
 - `skills/medlib/SKILL.md` — скилл: как выбирать источник и отвечать.
+- `chatgpt/` — инструкции для MEDLIB GPT в ChatGPT.
 
 MEDLIB не заменяет клиническое суждение. Проверяйте дозировки по первоисточнику.
 
