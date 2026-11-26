@@ -1,6 +1,6 @@
 # MEDLIB для Claude и ChatGPT
 
-Клинические источники [MEDLIB](https://medlib.kz) прямо в вашем ИИ-чате: UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, PubMed, Реестр ЛС РК (NDDA), клинические протоколы МЗ РК, EMA, редкие и орфанные заболевания (Orphanet, гены, препараты, ClinicalTrials.gov) и openFDA.
+Клинические источники [MEDLIB](https://medlib.kz) прямо в вашем ИИ-чате: UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, Sanford Guide, PubMed, Реестр ЛС РК (NDDA), клинические протоколы МЗ РК, EMA, редкие и орфанные заболевания (Orphanet, гены, препараты, ClinicalTrials.gov) и openFDA.
 
 Для использования нужна подписка MEDLIB: **https://medlib.kz/pricing**.
 
@@ -50,6 +50,7 @@ MCP-коннектор и команды:
 | `/medlib:dynamed <вопрос>` | DynaMed |
 | `/medlib:bmj <вопрос>` | BMJ Best Practice |
 | `/medlib:clinicalkey <вопрос>` | ClinicalKey |
+| `/medlib:sanford <вопрос>` | Sanford Guide |
 | `/medlib:pubmed <вопрос>` | PubMed |
 | `/medlib:ndda <вопрос>` | Реестр ЛС РК |
 | `/medlib:protocols <вопрос>` | Клинические протоколы МЗ РК |

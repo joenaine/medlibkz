@@ -1,6 +1,6 @@
 ---
 name: medlib
-description: Clinical answers from MEDLIB sources: UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, PubMed, the Kazakhstan drug registry (NDDA), Kazakhstan MoH clinical protocols, EMA, rare and orphan diseases, openFDA. Use when a physician asks about diagnosis, treatment, dosing, drug registration in Kazakhstan, national protocols, EU drug safety, rare diseases or medical literature, names one of these sources, or asks how to connect MEDLIB.
+description: Clinical answers from MEDLIB sources: UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, Sanford Guide, PubMed, the Kazakhstan drug registry (NDDA), Kazakhstan MoH clinical protocols, EMA, rare and orphan diseases, openFDA. Use when a physician asks about diagnosis, treatment, dosing, drug registration in Kazakhstan, national protocols, EU drug safety, rare diseases or medical literature, names one of these sources, or asks how to connect MEDLIB.
 ---
 
 # MEDLIB
@@ -62,6 +62,7 @@ Full guide: https://medlib.kz/mcp
 |---|---|---|
 | Treatment, diagnosis, dosing, monitoring | UpToDate, DynaMed, BMJ Best Practice | `uptodate_*`, `dynamed_*`, `bmj_*` |
 | Guidelines and textbooks | ClinicalKey | `clinicalkey_*` |
+| Infections, antibiotics, empiric therapy | Sanford Guide | `sanford_*` |
 | Studies and reviews | PubMed | `pubmed_*` |
 | Drug registration in Kazakhstan, ATC, manufacturer | Реестр ЛС (NDDA) | `ndda_*` |
 | Kazakhstan MoH clinical protocol | Протоколы РК | `kzprotocols_*` |
@@ -74,11 +75,11 @@ If the user names a source or runs a `/medlib:` command, use only that source.
 ## Step 3. Search and read
 
 1. Search first.
-2. Open the full topic or record with the matching get tool: `uptodate_get_topic`, `dynamed_get_content`, `bmj_get_topic`, `clinicalkey_get_content`, `pubmed_get_article`, `ndda_get_drug`, `kzprotocols_get`, `orpha_get_disease`.
+2. Open the full topic or record with the matching get tool: `uptodate_get_topic`, `dynamed_get_content`, `bmj_get_topic`, `clinicalkey_get_content`, `sanford_get_content`, `pubmed_get_article`, `ndda_get_drug`, `kzprotocols_get`, `orpha_get_disease`.
 3. Give doses and recommendations only from the opened text. Search results only help you find the topic.
 
 Query language:
-1. English for UpToDate, DynaMed, BMJ, ClinicalKey, PubMed, EMA, openFDA and Orphanet.
+1. English for UpToDate, DynaMed, BMJ, ClinicalKey, Sanford, PubMed, EMA, openFDA and Orphanet.
 2. Russian drug names (МНН, trade names) or ATC codes for NDDA. NDDA has no disease search.
 3. Russian or ICD-10 codes for Протоколы РК.
 
