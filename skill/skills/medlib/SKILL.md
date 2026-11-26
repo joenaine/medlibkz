@@ -28,8 +28,8 @@ Write it in plain short sentences. Use the steps for the app the user is in. If 
 2. The server address: `https://medlib.kz/api/mcp/medlib`
 
 **Claude.ai and Claude Desktop**
-1. Open Settings, then Connectors.
-2. Click "Add custom connector".
+1. Open Customize, then Connectors.
+2. Click "+", then "Add custom connector".
 3. Enter the name MEDLIB and paste the server address.
 4. Leave the OAuth Client ID and Client Secret fields empty.
 5. Click Add, then Connect.
@@ -45,11 +45,14 @@ Write it in plain short sentences. Use the steps for the app the user is in. If 
 5. Use commands such as `/medlib:uptodate`, `/medlib:protocols`, `/medlib:ndda`, `/medlib:orphan`.
 
 **ChatGPT**
-1. Open Settings, then Apps & Connectors, then Advanced settings.
-2. Turn on Developer mode.
-3. Click Create. Enter the name MEDLIB, paste the server address, choose OAuth.
-4. Sign in to MEDLIB.
-5. In a new chat, click "+" and choose MEDLIB.
+1. Open Settings, then Plugins.
+2. Click "+", then "Add custom MCP server". Developer mode is not needed.
+3. Enter the name MEDLIB and paste the server address into Connection.
+4. Under Authentication choose OAuth. Leave the other fields empty.
+5. Tick "I understand and want to continue" and click "Create as a plugin".
+6. Sign in to MEDLIB and click Allow.
+7. In a new chat type @ and choose MEDLIB.
+Some ChatGPT plans do not allow custom MCP servers. In that case use Claude, or ask the MEDLIB team for the MEDLIB GPT link.
 
 **Help**
 Full guide: https://medlib.kz/mcp

@@ -60,22 +60,25 @@ MCP-коннектор и команды:
 
 ## Claude.ai и Claude Desktop
 
-1. **Settings → Connectors → Add custom connector.**
+1. **Customize → Connectors → «+» → Add custom connector.**
 2. Name: `MEDLIB`, URL: `https://medlib.kz/api/mcp/medlib`.
 3. Нажмите **Connect** и войдите в аккаунт MEDLIB.
 4. В чате нажмите **+** → MEDLIB: там те же команды (UpToDate, Протоколы РК, Орфанные…).
 
-Скилл ставится отдельно: скачайте [medlib-skill.zip](medlib-skill.zip), затем **Settings → Capabilities → Skills → Upload skill**.
+Скилл ставится отдельно: скачайте [medlib-skill.zip](medlib-skill.zip), затем **Customize → Skills → Upload skill**.
 
 ## ChatGPT
 
 **MEDLIB GPT.** Откройте MEDLIB GPT в ChatGPT, нажмите «Sign in with medlib.kz» и задайте вопрос. Работает на любом тарифе ChatGPT, где доступны GPTs.
 
-**Коннектор (Developer mode).**
+**Коннектор.**
 
-1. **Settings → Apps & Connectors → Advanced settings → Developer mode** (включить).
-2. **Create** → Name: `MEDLIB`, MCP Server URL: `https://medlib.kz/api/mcp/medlib`, Authentication: **OAuth**.
-3. Войдите в аккаунт MEDLIB и выберите MEDLIB в меню **+** нового чата.
+1. **Settings → Plugins → «+» → Add custom MCP server.** Developer mode включать не нужно.
+2. Name: `MEDLIB`, Connection: `https://medlib.kz/api/mcp/medlib`, Authentication: **OAuth**, остальные поля пустые.
+3. Отметьте «I understand and want to continue», нажмите **Create as a plugin** и войдите в аккаунт MEDLIB.
+4. В новом чате напишите `@` и выберите MEDLIB.
+
+Не все тарифы ChatGPT разрешают свои MCP-серверы. Если на вашем нет такой кнопки, пользуйтесь MEDLIB GPT или Claude.
 
 Инструкции и схема для создания GPT: [chatgpt/](chatgpt/).
 
