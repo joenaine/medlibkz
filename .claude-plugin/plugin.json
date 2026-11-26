@@ -1,0 +1,20 @@
+{
+  "name": "medlib",
+  "version": "1.0.0",
+  "description": "MEDLIB clinical sources in Claude: UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, PubMed, Kazakhstan drug registry and MoH protocols, EMA, rare/orphan diseases and openFDA.",
+  "author": {
+    "name": "MEDLIB",
+    "url": "https://medlib.kz"
+  },
+  "homepage": "https://github.com/joenaine/medlibkz",
+  "license": "MIT",
+  "keywords": [
+    "medicine",
+    "clinical",
+    "uptodate",
+    "pubmed",
+    "kazakhstan",
+    "mcp"
+  ],
+  "repository": "https://github.com/joenaine/medlibkz"
+}

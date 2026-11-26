@@ -1,0 +1,14 @@
+{
+  "name": "medlib",
+  "owner": {
+    "name": "MEDLIB",
+    "url": "https://medlib.kz"
+  },
+  "plugins": [
+    {
+      "name": "medlib",
+      "source": "./",
+      "description": "MEDLIB clinical sources with /medlib:<source> commands."
+    }
+  ]
+}

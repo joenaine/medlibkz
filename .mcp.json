@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "medlib": {
+      "type": "http",
+      "url": "https://medlib.kz/api/mcp/medlib"
+    }
+  }
+}
