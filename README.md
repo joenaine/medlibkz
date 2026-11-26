@@ -10,14 +10,35 @@
 https://medlib.kz/api/mcp/medlib
 ```
 
+## Что в репозитории
+
+MCP и скилл устанавливаются отдельно.
+
+| Часть | Папка | Что даёт |
+|---|---|---|
+| **MCP-коннектор** | `mcp/` | Доступ к источникам MEDLIB и слэш-команды `/medlib:*` |
+| **Скилл** | `skill/`, архив `medlib-skill.zip` | Объясняет Claude, как подключить MEDLIB, какой источник выбрать и как отвечать |
+
+Скилл без коннектора только подскажет, как подключиться. Коннектор работает и без скилла.
+
 ## Claude Code
+
+Добавьте маркетплейс:
 
 ```bash
 /plugin marketplace add joenaine/medlibkz
 ```
 
+MCP-коннектор и команды:
+
 ```bash
 /plugin install medlib@medlib
+```
+
+Скилл:
+
+```bash
+/plugin install medlib-skill@medlib
 ```
 
 При первом запросе Claude откроет браузер для входа в MEDLIB. После этого доступны команды:
@@ -44,7 +65,7 @@ https://medlib.kz/api/mcp/medlib
 3. Нажмите **Connect** и войдите в аккаунт MEDLIB.
 4. В чате нажмите **+** → MEDLIB: там те же команды (UpToDate, Протоколы РК, Орфанные…).
 
-Чтобы Claude сам выбирал источник, загрузите скилл: **Settings → Capabilities → Skills → Upload skill** и выберите папку `skills/medlib` (в zip).
+Скилл ставится отдельно: скачайте [medlib-skill.zip](medlib-skill.zip), затем **Settings → Capabilities → Skills → Upload skill**.
 
 ## ChatGPT
 
@@ -72,13 +93,12 @@ https://medlib.kz/api/mcp/medlib
 
 ## Что внутри
 
-- `.mcp.json` — подключение к MCP-серверу MEDLIB.
-- `commands/` — слэш-команды `/medlib:*` для Claude Code.
-- `skills/medlib/SKILL.md` — скилл: как выбирать источник и отвечать.
-- `chatgpt/` — инструкции для MEDLIB GPT в ChatGPT.
+- `mcp/`: MCP-коннектор (`.mcp.json`) и слэш-команды `/medlib:*`.
+- `skill/skills/medlib/SKILL.md`: скилл, он же в `medlib-skill.zip` для Claude.ai.
+- `chatgpt/`: инструкции для MEDLIB GPT в ChatGPT.
 
 MEDLIB не заменяет клиническое суждение. Проверяйте дозировки по первоисточнику.
 
 ---
 
-**English.** MEDLIB connects Claude, ChatGPT and other MCP clients to UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, PubMed, Kazakhstan drug registry and MoH protocols, EMA, rare-disease sources and openFDA. Add `https://medlib.kz/api/mcp/medlib` as a custom connector (OAuth) or install this plugin in Claude Code with `/plugin marketplace add joenaine/medlibkz`.
+**English.** MEDLIB connects Claude, ChatGPT and other MCP clients to UpToDate, DynaMed, BMJ Best Practice, ClinicalKey, PubMed, Kazakhstan drug registry and MoH protocols, EMA, rare-disease sources and openFDA. Add `https://medlib.kz/api/mcp/medlib` as a custom connector (OAuth) or in Claude Code run `/plugin marketplace add joenaine/medlibkz`, then `/plugin install medlib@medlib` (connector) and `/plugin install medlib-skill@medlib` (skill).

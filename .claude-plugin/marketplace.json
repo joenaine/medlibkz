@@ -7,8 +7,14 @@
   "plugins": [
     {
       "name": "medlib",
-      "source": "./",
-      "description": "MEDLIB clinical sources with /medlib:<source> commands."
+      "source": "./mcp",
+      "description": "MEDLIB MCP connector and /medlib:<source> commands."
+    },
+    {
+      "name": "medlib-skill",
+      "source": "./skill",
+      "description": "MEDLIB skill: connection guide, source choice, answer rules."
     }
-  ]
+  ],
+  "description": "MEDLIB clinical sources for Claude: an MCP connector with slash commands and a separate skill."
 }

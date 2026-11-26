@@ -1,0 +1,20 @@
+{
+  "name": "medlib-skill",
+  "version": "1.0.0",
+  "description": "MEDLIB skill: how to connect MEDLIB, pick the right clinical source and answer with medlib.kz links. Works with the MEDLIB connector.",
+  "author": {
+    "name": "MEDLIB",
+    "url": "https://medlib.kz"
+  },
+  "homepage": "https://github.com/joenaine/medlibkz",
+  "license": "MIT",
+  "keywords": [
+    "medicine",
+    "clinical",
+    "uptodate",
+    "pubmed",
+    "kazakhstan",
+    "mcp"
+  ],
+  "repository": "https://github.com/joenaine/medlibkz"
+}

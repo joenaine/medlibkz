@@ -39,9 +39,10 @@ Write it in plain short sentences. Use the steps for the app the user is in. If 
 
 **Claude Code**
 1. Run `/plugin marketplace add joenaine/medlibkz`.
-2. Run `/plugin install medlib@medlib`.
-3. On the first question a browser window opens. Sign in to MEDLIB.
-4. Use commands such as `/medlib:uptodate`, `/medlib:protocols`, `/medlib:ndda`, `/medlib:orphan`.
+2. Run `/plugin install medlib@medlib` to add the connector and commands.
+3. Optionally run `/plugin install medlib-skill@medlib` to add this skill.
+4. On the first question a browser window opens. Sign in to MEDLIB.
+5. Use commands such as `/medlib:uptodate`, `/medlib:protocols`, `/medlib:ndda`, `/medlib:orphan`.
 
 **ChatGPT**
 1. Open Settings, then Apps & Connectors, then Advanced settings.
