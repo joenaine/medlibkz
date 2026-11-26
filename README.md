@@ -73,12 +73,12 @@ MCP-коннектор и команды:
 
 **Коннектор.**
 
-1. **Settings → Plugins → «+» → Add custom MCP server.** Developer mode включать не нужно.
-2. Name: `MEDLIB`, Connection: `https://medlib.kz/api/mcp/medlib`, Authentication: **OAuth**, остальные поля пустые.
-3. Отметьте «I understand and want to continue», нажмите **Create as a plugin** и войдите в аккаунт MEDLIB.
-4. В новом чате напишите `@` и выберите MEDLIB.
-
-Не все тарифы ChatGPT разрешают свои MCP-серверы. Если на вашем нет такой кнопки, пользуйтесь MEDLIB GPT или Claude.
+1. Откройте [chatgpt.com/plugins](https://chatgpt.com/plugins) в браузере (нужна веб-версия).
+2. Нажмите «+» и **Add custom MCP server**. Если кнопки нет, на вашем тарифе или в рабочем пространстве свои MCP-серверы недоступны. Используйте Claude.
+3. Name: `MEDLIB`, Connection: `https://medlib.kz/api/mcp/medlib`, Authentication: **OAuth**, остальные поля пустые.
+4. Отметьте «I understand and want to continue», нажмите **Create as a plugin**.
+5. Откройте плагин, нажмите **Install**, войдите в MEDLIB.
+6. В новом чате напишите `@`, выберите MEDLIB и назовите источник в вопросе.
 
 Инструкции и схема для создания GPT: [chatgpt/](chatgpt/).
 

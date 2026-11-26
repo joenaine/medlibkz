@@ -45,14 +45,13 @@ Write it in plain short sentences. Use the steps for the app the user is in. If 
 5. Use commands such as `/medlib:uptodate`, `/medlib:protocols`, `/medlib:ndda`, `/medlib:orphan`.
 
 **ChatGPT**
-1. Open Settings, then Plugins.
-2. Click "+", then "Add custom MCP server". Developer mode is not needed.
+1. Open https://chatgpt.com/plugins in a browser. You need the web app.
+2. Click "+", then "Add custom MCP server". If there is no such button, your plan or workspace does not allow custom MCP servers. Use Claude instead.
 3. Enter the name MEDLIB and paste the server address into Connection.
 4. Under Authentication choose OAuth. Leave the other fields empty.
 5. Tick "I understand and want to continue" and click "Create as a plugin".
-6. Sign in to MEDLIB and click Allow.
-7. In a new chat type @ and choose MEDLIB.
-Some ChatGPT plans do not allow custom MCP servers. In that case use Claude, or ask the MEDLIB team for the MEDLIB GPT link.
+6. Open the plugin, click Install, sign in to MEDLIB and click Allow.
+7. In a new chat type @ and choose MEDLIB. Name the source in your question.
 
 **Help**
 Full guide: https://medlib.kz/mcp
